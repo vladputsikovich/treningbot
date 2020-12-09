@@ -40,7 +40,8 @@ class BotHandler:
 greet_bot = BotHandler(TOKEN)  
 greetings = ('здравствуй', 'привет', 'ку', 'здорово')  
 now = datetime.datetime.now()
-
+chat_id =greet_bot.get_last_update()['message']['chat']['id']
+greet_bot.send_message(chat_id, "SYKA R")
 
 def main():  
     new_offset = None
